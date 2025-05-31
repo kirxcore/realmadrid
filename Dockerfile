@@ -1,6 +1,4 @@
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
-COPY ./assets /usr/share/nginx/html
-COPY ./pics /usr/share/nginx/html
-COPY ./index.html /usr/share/nginx/html
+COPY ./site/. /usr/share/nginx/html
 EXPOSE 80
